@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Shayari Generator</title>
+  <style>
+    body { font-family: 'Noto Nastaliq Urdu', serif; background: #1a1a2e; color: #eee; text-align: center; padding: 20px; }
+    h1 { color: #e94560; }
+    input, button { padding: 12px; font-size: 18px; border-radius: 8px; border: none; margin: 10px; }
+    input { width: 80%; }
+    button { background: #e94560; color: white; cursor: pointer; }
+    #result { margin-top: 20px; font-size: 22px; line-height: 2; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <h1>AI Shayari Generator</h1>
+  <p>Mozon bataye, AI shayari banaye ga</p>
+  <input type="text" id="topic" placeholder="Maslan: dosti, ishq, mausam">
+  <button onclick="generateShayari()">Shayari Banao</button>
+  <div id="result"></div>
+  <script>
+    async function generateShayari() {
+      const topic = document.getElementById('
